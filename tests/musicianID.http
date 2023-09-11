@@ -1,0 +1,2 @@
+### GET REQUEST
+GET http://localhost:4004/odata/v4/labelservice/musicianID(ID=025bf968-1303-4b7f-bf14-eba299c272cb)

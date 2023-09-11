@@ -1,0 +1,20 @@
+### POST REQUEST 
+POST http://localhost:4004/odata/v4/labelservice/Musicians
+Content-Type: application/json
+
+{
+    "ID": "eac61db1-6e76-4dd8-95d4-1996cb86adad",
+    "name": "Wilde",
+    "lastname": "Ruíz",
+    "birthday": "1977-09-10",
+    "instrument": "Percussion"
+}
+
+### GET REQUEST 
+GET http://localhost:4004/odata/v4/labelservice/Musicians?$expand=band
+
+### GET REQUEST 
+GET http://localhost:4004/odata/v4/labelservice/Musicians
+
+### DELETE REQUEST
+DELETE http://localhost:4004/odata/v4/labelservice/Musicians(025bf968-1303-4b7f-bf14-eba299c272cb)

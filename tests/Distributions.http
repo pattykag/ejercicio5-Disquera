@@ -1,0 +1,8 @@
+### POST REQUEST 
+POST http://localhost:4004/odata/v4/labelservice/Distributions
+Content-Type: application/json
+
+{
+    "ID": "d5400adc-5936-4fb9-b7b3-c094feedd01d",
+    "name" : "Ingeniero Carlos Hernández"
+}

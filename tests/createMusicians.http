@@ -1,0 +1,20 @@
+### POST REQUEST 
+POST http://localhost:4004/odata/v4/labelservice/createMusicians
+Content-Type: application/json
+
+{
+    "value": [
+        {
+            "name": "Sid",
+            "lastname": "Wilson",
+            "birthday": "1977-01-20",
+            "instrument": "Keyboards"
+        },
+        {
+            "name": "Jim",
+            "lastname": "Root",
+            "birthday": "1971-10-02",
+            "instrument": "Guitar"
+        }
+    ]
+}

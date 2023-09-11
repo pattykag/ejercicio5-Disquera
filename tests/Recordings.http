@@ -1,0 +1,46 @@
+### GET REQUEST 
+GET http://localhost:4004/odata/v4/labelservice/Recordings
+
+### hourQuantity < 6
+### POST REQUEST 
+POST http://localhost:4004/odata/v4/labelservice/Recordings
+Content-Type: application/json
+
+{
+    "ID": "cf69ec75-260c-4d74-b45d-39f9bff8325e",
+    "hourQuantity" : 3,
+    "recordingDate" : "2009-07-03",
+    "musician_ID" : "ea0b7d17-4b3b-4260-aa5c-194f8ff68a1a",
+    "song": "My endless song",
+    "disk_ID": "d135875e-77b0-45c9-a7b4-6ddbea70a202"
+}
+
+### hourQuantity >=6
+### POST REQUEST 
+POST http://localhost:4004/odata/v4/labelservice/Recordings
+Content-Type: application/json
+
+{
+    "ID": "da0abebd-c96f-4199-9d95-696bd5a2abe3",
+    "hourQuantity" : 6,
+    "recordingDate" : "2009-07-02",
+    "song": "My endless song",
+    "musician_ID" : "e50d2f68-56b1-4f14-9077-c72a55b16462",
+    "disk_ID": "d135875e-77b0-45c9-a7b4-6ddbea70a202"
+}
+
+### UPDATE REQUEST - PATCH (actualiza el registro especificado)
+PATCH http://localhost:4004/odata/v4/labelservice/Recordings(cf69ec75-260c-4d74-b45d-39f9bff8325e)
+Content-Type: application/json
+
+{
+    "hourQuantity": 7
+}
+
+### UPDATE REQUEST - PUT (actualiza todos los registros)
+PUT http://localhost:4004/odata/v4/labelservice/Recordings(70463a8c-19fe-4550-9b9c-6dac07e95f45)
+Content-Type: application/json
+
+{
+    "hourQuantity": 7
+}
